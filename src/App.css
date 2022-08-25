@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.nave{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+.ul{
+  display: flex;
+  justify-content: center;
+  
+  justify-content: space-evenly;
+}
+.lei{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color: wheat;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.leii{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+color: wheat;
+  font-family:fantasy;
+  font-size: 40px;
+  padding: 10px;
+}
+
