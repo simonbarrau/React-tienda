@@ -5,13 +5,22 @@ const NavBar= () => {
            
         
             <ul className="ul" >
-
-            <li className="leii">WAKEIT</li>
-            <li className="lei">HOME</li>
-            <li className="lei">PRODUCTS</li>
-            <li className="lei">ABOUT US</li>
-            <li className="lei">LEGENDS</li>
-
+           
+            <a href="./">
+                <li className="leii">WAKEIT</li>
+            </a>
+            <a href="./">
+                <li className="lei">HOME</li>
+                </a>
+            <a href="./">
+                <li className="lei">PRODUCTS</li>
+                </a>
+            <a href="./">
+                <li className="lei">ABOUT US</li>
+                </a>
+            <a href="./">
+                <li className="lei">LEGENDS</li>
+                </a>
             </ul>
                 
                 
