@@ -5,6 +5,7 @@ const NavBar= () => {
            
         
             <ul className="ul" >
+            
            
             <a href="./">
                 <li className="leii">WAKEIT</li>
