@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
             <img className='surf' src={img}  alt="Surf" />
+
       <NavBar/>
       
       <header className="App-header">
