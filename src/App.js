@@ -1,16 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar';
-import CartWidget from './Components/CartWidget/CartWidget';
+//import CartWidget from './Components/CartWidget/CartWidget';
 import ItemListContainer from './Components/ItemListsContainer/ItemListContainer';
 import ItemCount from './Components/ItemCount/ItemCount';
+import img from './img/pic.jpg';
 
 function App() {
   return (
     <div className="App">
+            <img className='surf' src={img}  alt="Surf" />
       <NavBar/>
-      <CartWidget/>
+      
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
         <ItemCount/>
         <ItemListContainer saludo="Hello Surfers!"/>

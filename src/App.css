@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -66,5 +67,16 @@ color: wheat;
   font-family:fantasy;
   font-size: 40px;
   padding: 10px;
+}
+
+.surf{
+  height: 200px;
+  width: 200px;
+  background-color: black;
+  display: flex;
+  top: 100px;
+  border-radius: 100%;
+ 
+
 }
 
