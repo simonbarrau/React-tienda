@@ -7,6 +7,7 @@ import ItemCount from './Components/ItemCount/ItemCount';
 import img from './img/pic.jpg';
 
 function App() {
+  const stock= 5
   return (
     <div className="App">
             <img className='surf' src={img}  alt="Surf" />
@@ -16,7 +17,7 @@ function App() {
       <header className="App-header">
 
         <img src={logo} className="App-logo" alt="logo" />
-        <ItemCount/>
+        <ItemCount stock={stock}/>
         <ItemListContainer saludo="Hello Surfers!"/>
 
         
