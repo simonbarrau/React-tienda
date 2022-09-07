@@ -23,7 +23,7 @@ const data = [
         image:`https://i.pinimg.com/564x/60/62/70/6062706e7639cb75b27a5241a3ab1627.jpg`
 
     },
-    ,
+    
 
     {
         id:`4`,
