@@ -55,8 +55,8 @@
 .card{
   width: 18rem;
   color: black;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .title{
