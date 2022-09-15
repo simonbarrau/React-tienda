@@ -7,10 +7,11 @@ const NavBar= () => {
         <>
         
         <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-        <a class="nav-link active" aria-current="page" href="./">
+        <div class="container-fluid"> 
+        <Link to={'/'}> 
         <img className='surf' src={img} alt="surf"></img>
-        </a>
+        </Link>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

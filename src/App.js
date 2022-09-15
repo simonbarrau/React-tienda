@@ -16,7 +16,8 @@ function App() {
     <ItemCount stock={stock}/>
     </div>
     <Routes>
-    <Route path='/products' element={<ItemListContainer />}/>
+    <Route path='/' element={<ItemListContainer />}/>
+    <Route path='category/:id' element={<ItemListContainer />}/>
     <Route path='detail/:id' element={<ItemDetailContainer />}/>
 
     </Routes>
