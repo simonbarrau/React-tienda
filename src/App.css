@@ -55,7 +55,14 @@
 .card{
   width: 18rem;
   color: black;
-  
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  color: black;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
 }
 
 

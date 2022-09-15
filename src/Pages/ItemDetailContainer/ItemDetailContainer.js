@@ -27,7 +27,7 @@ getDetail.then((response) =>{
     <> 
     {productDetail
     ? <ItemDetails product={productDetail}/>
-    : < h2>Obteniendo Detalle</h2>}
+    : < h2>Obteniendo Detalles...</h2>}
     </>
 
   )
