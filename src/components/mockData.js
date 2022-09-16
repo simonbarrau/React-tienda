@@ -40,8 +40,8 @@ const data = [
         tittle:`Fish`,
         price:`$500`,
         image:`https://i.pinimg.com/564x/86/17/70/86177020d374d89bb97ee6b6193fc74a.jpg`,
-        description:`lorem lorem lorem`,
-        category: `El tipo de tabla de surf llamado “Egg” es una mezcla entre un longboard y un shortboard. Se podría decir también que es un equilibrio de tradición y performance moderno. Cabe destacar la versatilidad para todo tipo de condiciones desde olas pequeñas a olas grandes. Se les llama eggs por la forma de huevo redondeado que tiene. El diseño de esta tabla de surf llama la atención de los surfistas por dos características que son tablas muy manejables y con gran flotabilidad`
+        description:`El tipo de tabla de surf llamado “Egg” es una mezcla entre un longboard y un shortboard. Se podría decir también que es un equilibrio de tradición y performance moderno. Cabe destacar la versatilidad para todo tipo de condiciones desde olas pequeñas a olas grandes. Se les llama eggs por la forma de huevo redondeado que tiene. El diseño de esta tabla de surf llama la atención de los surfistas por dos características que son tablas muy manejables y con gran flotabilidad`,
+        category: `Stylysh`
 
 
     },

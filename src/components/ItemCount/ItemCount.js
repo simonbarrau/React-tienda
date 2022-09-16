@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState } from "react";
+import "./ItemCount.css";
+
 
 const ItemCount = (props) => {
 const [initialState, setInitialState] = useState(0);
@@ -12,13 +14,17 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
 };
 
   return (
-    <div>
+    <div >
       
         Stock:{props.stock}
-        <h3> Tengo {initialState} items en mi carro</h3>
         <hr/>
-        <button onClick={resta}> - </button>
-        <button onClick={suma}> + </button>
+        <h3>  {initialState} </h3>
+        <div className="stock"> 
+        <button onClick={resta}> Delete from cart </button>
+        <button onClick={suma}> Add to cart </button>
+        </div>
+
+
 
     </div>
   )

@@ -1,5 +1,5 @@
 import img from '../img/pic.jpg';
-import ima from '../img/car1.png'
+import ima from '../img/car1.png';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 
