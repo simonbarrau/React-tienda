@@ -39,7 +39,7 @@ const data = [
         price:`$500`,
         image:`https://i.pinimg.com/564x/86/17/70/86177020d374d89bb97ee6b6193fc74a.jpg`,
         description:`lorem lorem lorem`,
-        category: `Beach`
+        category: `Style`
 
 
     },

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: wheat;
 }
 
 .App-logo {
@@ -44,6 +44,12 @@
   font-size: 20px;
 }
 
+.btn btn-secondary dropdown-toggle{
+  color: wheat;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+}
+
 .surf{
   height: 200px;
   width: 200px;
@@ -65,6 +71,10 @@
   font-size: 35px;
 }
 
+.carro{
+  height: 60px;
+  width: 60px;
+}
 
 
 

@@ -1,4 +1,5 @@
 import img from '../img/pic.jpg';
+import ima from '../img/car1.png'
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +7,7 @@ const NavBar= () => {
     return(
         <>
         
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-white">
         <div class="container-fluid"> 
         <Link to={'/'}> 
         <img className='surf' src={img} alt="surf"></img>
@@ -18,9 +19,21 @@ const NavBar= () => {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-              <Link to={'/products'}> 
-                <div class="nav-link active">PRODUCTS</div>
+              <div class="dropdown">
+  <button  class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+  PRODUCTS
+  </button>
+  <ul class="dropdown-menu">
+  <Link to={'/'}> 
+                <div class="dropdown-item">Products</div>
                 </Link>
+                <Link to={'/category/:categoryId'}> 
+                <div class="dropdown-item">Categories</div>
+                </Link>
+ 
+  </ul>
+</div>
+            
               </li>
               <li class="nav-item">
               <Link to={'/about-us'}> 
@@ -32,8 +45,9 @@ const NavBar= () => {
 
               </li>
               <li class="nav-item">
-              <Link to={'/'}> 
-              <div class="nav-link active">CART</div>                </Link>
+              <Link to={'/carro'}> 
+              <img className='carro' height="40px" src={ima} alt="surf"></img>
+             </Link>
               </li>
              
             
