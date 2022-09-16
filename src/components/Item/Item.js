@@ -9,6 +9,7 @@ const Item = ({tittle, price, image, category}) => {
 
   <div class="card-body">
     <p class="card-text">{price}</p>  
+    <p class="card-text">{price}</p>  
       <p class="card-text">{category}</p>
     <a href="./" class="btn btn-primary">Buy🤑</a>
   </div>
