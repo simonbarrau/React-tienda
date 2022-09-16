@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+
+
+.card{
+	width: 90%;
+	margin: 70px;
+	border-radius: 6px;
+	overflow: visible;
+	background: wheat;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: crosshair;
+text-align: center;}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card-img-top{
+    position: relative;
+    left: 500px;
+	width: 250px;
+	height: 400px;
+    border-radius: 5%;
+}
+
+
+
+

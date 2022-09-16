@@ -1,3 +1,4 @@
+import './ItemDetails.css';
 
 const ItemDetails = ({product}) => {
   return (
@@ -6,7 +7,7 @@ const ItemDetails = ({product}) => {
 
 <img src={product.image} alt={product.tittle} class="card-img-top" height="350px" width="400px"></img>
 
-<p>  {product.description}  </p>
+<p className="descripciones">  {product.description}  </p>
 <p>  {product.category} </p>
 <p>  {product.price} </p>
  </div>

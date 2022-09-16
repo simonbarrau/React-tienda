@@ -58,13 +58,7 @@
   border-radius: 100%;
 }
 
-.card{
-  width: 18rem;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .title{
   color: black;
