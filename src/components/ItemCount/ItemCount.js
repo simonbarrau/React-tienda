@@ -1,11 +1,12 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./ItemCount.css";
 
 
-const ItemCount = (props) => {
-const [initialState, setInitialState] = useState(0);
+const ItemCount = ({initialState, setInitialState}) => {
+const stock= 8
+//const [initialState, setInitialState] = useState(0);
 
-const suma= () => { initialState <= props.stock -1 ?     setInitialState(initialState + 1) : alert("Alcanzaste el maximo de stock")
+const suma= () => {    initialState <= stock -1 ?     setInitialState(initialState + 1) : alert("Alcanzaste el maximo de stock")
 
    
 };
@@ -18,7 +19,7 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
   return (
     <div >
       
-        Stock:{props.stock}
+        Stock:{stock}
         <hr/>
         <h3>  {initialState} </h3>
         <div className="stock"> 

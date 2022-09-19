@@ -1,8 +1,17 @@
 import './ItemDetails.css';
 import ItemCount from '../ItemCount/ItemCount';
+import { useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 const ItemDetails = ({product}) => {
-  const stock=8
+  const [initialState, setInitialState] = useState(0);
+
+  const handleClick=() => {
+    console.log(initialState);
+  }
+  
+
   return (
     <div className='card' >
 
@@ -18,7 +27,12 @@ const ItemDetails = ({product}) => {
 
  </div> 
 
-<ItemCount stock={stock} />
+<ItemCount  initialState={initialState}  setInitialState={setInitialState}/>
+<Link to={'/cart'}> 
+<button onClick={handleClick}> Terminar Compra</button>
+</Link> 
+
+
  </div>
  </div>
 
