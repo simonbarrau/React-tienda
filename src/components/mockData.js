@@ -40,7 +40,7 @@ const data = [
         tittle:`Fish`,
         price:`$500`,
         image:`https://i.pinimg.com/564x/86/17/70/86177020d374d89bb97ee6b6193fc74a.jpg`,
-        description:`El tipo de tabla de surf llamado “Egg” es una mezcla entre un longboard y un shortboard. Se podría decir también que es un equilibrio de tradición y performance moderno. Cabe destacar la versatilidad para todo tipo de condiciones desde olas pequeñas a olas grandes. Se les llama eggs por la forma de huevo redondeado que tiene. El diseño de esta tabla de surf llama la atención de los surfistas por dos características que son tablas muy manejables y con gran flotabilidad`,
+        description:`Las tablas fish tienen más volumen que los shortboard y llevan un outline ancho desde el tail hasta el nose. Son ideales para los surferos de nivel intermedio que quieren pasar a una tabla corta, o para surferos experimentados los días de olas pequeñas. Son tablas faciles de remar y de surfear, tablas que ayudaran a los surfistas de nivel intermedio a progresar, y que ayudaran a los surfistas experimentados a disfrutar de olas pequeñas, de poca potencia, o a coger más olas los días saturados de gente.`,
         category: `Stylysh`
 
 

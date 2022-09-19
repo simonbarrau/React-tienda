@@ -13,6 +13,8 @@ const suma= () => { initialState <= props.stock -1 ?     setInitialState(initial
 const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : alert("Error 404")
 };
 
+
+
   return (
     <div >
       
@@ -22,6 +24,8 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
         <div className="stock"> 
         <button onClick={resta}> Delete from cart </button>
         <button onClick={suma}> Add to cart </button>
+
+        
         </div>
 
 

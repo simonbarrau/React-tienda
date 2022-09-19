@@ -1,18 +1,27 @@
 import './ItemDetails.css';
 import ItemCount from '../ItemCount/ItemCount';
+
 const ItemDetails = ({product}) => {
-  const stock=5
+  const stock=8
   return (
-    <div class="card" >
+    <div className='card' >
+
+    <div class="cardd" >
       <h2 className="title">  {product.tittle}  </h2>
 
-<img src={product.image} alt={product.tittle} class="card-img-top" height="350px" width="400px"></img>
+<img src={product.image} alt={product.tittle} class="card-img-topp"></img>
 
 <p className="descripciones">  {product.description}  </p>
-<p>  {product.category} </p>
-<p>  {product.price} </p>
+      <div class="cart" >
+<p className='leter'>  Category: {product.category} </p>
+<p className='leter'>  Price:{product.price} </p>
+
+ </div> 
+
 <ItemCount stock={stock} />
  </div>
+ </div>
+
   );
 };
 

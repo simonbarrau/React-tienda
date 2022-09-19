@@ -4,3 +4,48 @@
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.card{
+	width: 90%;
+	margin: 70px;
+	border-radius: 6px;
+	overflow: visible;
+	background: wheat;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: cell;
+text-align: center;}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card-img-topp{
+    
+	width: 250px;
+	height: 400px;
+    border-radius: 5%;
+}
+.cart {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.leter{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: 5px black solid;
+    background-color: aliceblue;
+    padding: 15px;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.leter:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+    background: linear-gradient(to right, wheat, yellow);
+}
