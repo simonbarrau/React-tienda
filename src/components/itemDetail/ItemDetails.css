@@ -49,3 +49,8 @@ text-align: center;}
 	transform: translateY(-3%);
     background: linear-gradient(to right, wheat, yellow);
 }
+
+.counter{
+    cursor: pointer;
+}
+
