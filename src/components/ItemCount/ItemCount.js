@@ -21,6 +21,7 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
       
         Stock:{stock}
         <hr/>
+    
         <h3>  {initialState} </h3>
         <div className="stock"> 
         <button onClick={resta}> Delete from cart </button>

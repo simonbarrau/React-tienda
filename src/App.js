@@ -6,11 +6,13 @@ import ItemCount from './Components/ItemCount/ItemCount';
 import ItemDetailContainer from './Pages/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import ItemDetails from './Components/itemDetail/ItemDetails';
-
+import { CartContext } from './Context/CartContext/CartContext';
 
 function App() {
   const stock= 5
   return (
+    <CartContext.Provider value={[]}>
+
     <BrowserRouter>
     <div className="App">
     <NavBar />
@@ -25,6 +27,7 @@ function App() {
 
     </Routes>
     </BrowserRouter>
+    </CartContext.Provider >
 
   );
 }

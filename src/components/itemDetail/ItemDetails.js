@@ -26,6 +26,7 @@ const ItemDetails = ({product}) => {
 <p className='leter'>  Price:{product.price} </p>
 
  </div> 
+ 
 
 <ItemCount  initialState={initialState}  setInitialState={setInitialState}/>
 <Link to={'/cart'}> 
