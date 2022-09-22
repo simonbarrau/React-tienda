@@ -5,10 +5,11 @@ import ItemListContainer from './Components/ItemListsContainer/ItemListContainer
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import { CartContext } from './Context/CartContext';
+import {CartProvider} from './Context/CartProvider';
 
 function App() {
   return (
-    <CartContext.Provider value={[]}>
+    <CartProvider>
 
     <BrowserRouter>
     <div className="App">
@@ -24,7 +25,7 @@ function App() {
 
     </Routes>
     </BrowserRouter>
-    </CartContext.Provider >
+    </CartProvider >
 
   );
 }

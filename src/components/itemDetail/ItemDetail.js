@@ -4,11 +4,20 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import Item from '../Item/Item';
+import { useContext } from 'react';
+import { CartContext } from '../../Context/CartContext';
 
 
 const ItemDetails = ({product}) => {
   const [initialState, setInitialState] = useState(0);
 
+  const{addToCart}=useContext(CartContext)
+  function onAdd ( product) {
+    
+      addToCart(product.item, initialState)
+    
+    
+  }
   const handleClick=() => {
     console.log(initialState);
   }
@@ -16,6 +25,8 @@ const ItemDetails = ({product}) => {
   const resetCount= () => {
     setInitialState(0)
   }
+
+
 
   return (
     <div className='card' >
@@ -32,8 +43,10 @@ const ItemDetails = ({product}) => {
 
  </div> 
 <h3 onClick={resetCount} className="counter">{initialState}</h3>
- {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState}/>
+ {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState} price={product.price}/>
  }
+ <button onClick={() => onAdd(product)}> Agregar al carrito</button>
+
 <Link to={'/cart'}> 
 <button onClick={handleClick}> Terminar Compra</button>
 </Link> 

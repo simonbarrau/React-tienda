@@ -1,4 +1,3 @@
-import { useState } from "react"
 import "./ItemCount.css";
 
 
@@ -19,12 +18,12 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
   return (
     <div >
       
-        Stock:{stock}
+        
         <hr/>
     
         <div className="stock"> 
-        <button onClick={resta}> Delete from cart </button>
-        <button onClick={suma}> Add to cart </button>
+        <button onClick={resta}> - </button>
+        <button onClick={suma}> + </button>
 
         
         </div>
