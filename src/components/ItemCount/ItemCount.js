@@ -13,12 +13,9 @@ const suma= () => {       setInitialState(initialState + 1)
 const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : alert("Error 404")
 };
 
-
-
   return (
     <div >
       
-        
         <hr/>
     
         <div className="stock"> 

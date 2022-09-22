@@ -10,11 +10,14 @@ export const CartProvider= ({children}) => {
         }else{
             setCart([...cart,{...item, caantidad}])
         }
+        console.log('cart',[...cart, {...item, caantidad}]);
     };
 
     const isInCart= (id) => {
         return cart.some((item) => item.id === id)
     };
+
+    
 
     return(
         <CartContext.Provider value={{cart, addToCart}}>

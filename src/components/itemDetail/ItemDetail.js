@@ -10,17 +10,16 @@ import { CartContext } from '../../Context/CartContext';
 
 const ItemDetails = ({product}) => {
   const [initialState, setInitialState] = useState(0);
-
   const{addToCart}=useContext(CartContext)
+  
   function onAdd ( product) {
-    
-      addToCart(product.item, initialState)
-    
-    
-  }
-  const handleClick=() => {
+    addToCart(product, initialState)
+     }
+  
+     const handleClick=() => {
     console.log(initialState);
   }
+  
   
   const resetCount= () => {
     setInitialState(0)
