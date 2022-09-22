@@ -24,11 +24,11 @@ const NavBar= () => {
   PRODUCTS
   </button>
   <ul class="dropdown-menu">
-  <Link to={'/'}> 
-                <div class="dropdown-item">Products</div>
+  <Link to={'/category/:categoryId'}> 
+                <div class="dropdown-item">Surf</div>
                 </Link>
                 <Link to={'/category/:categoryId'}> 
-                <div class="dropdown-item">Categories</div>
+                <div class="dropdown-item">Skate</div>
                 </Link>
  
   </ul>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import data from "../../Components/mockData";
-import ItemDetails from "../../Components/itemDetail/ItemDetails";
+import data from "../mockData";
+import ItemDetails from "../itemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
     const { id }= useParams();

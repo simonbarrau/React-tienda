@@ -2,18 +2,13 @@ import './App.css';
 import NavBar from './NavBar/NavBar';
 //import CartWidget from './Components/CartWidget/CartWidget';
 import ItemListContainer from './Components/ItemListsContainer/ItemListContainer';
-import ItemCount from './Components/ItemCount/ItemCount';
-import ItemDetailContainer from './Pages/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
-import ItemDetails from './Components/itemDetail/ItemDetails';
-import { CartContext } from './Context/CartContext/CartContext';
-import Loader from './Components/Loader/Loader';
+import { CartContext } from './Context/CartContext';
 
 function App() {
-  const stock= 5
   return (
     <CartContext.Provider value={[]}>
-    <Loader/>
 
     <BrowserRouter>
     <div className="App">
@@ -35,3 +30,5 @@ function App() {
 }
 
 export default App;
+
+

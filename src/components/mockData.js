@@ -6,7 +6,6 @@ const data = [
         price:`$350`,
         image:`https://i.pinimg.com/564x/8e/1b/2c/8e1b2ca58ab2fa51b57793034dbee30d.jpg`,
         description:`La tabla de surf estilo “Mini Malibu” o “Mini Mal”, también conocido como “funboard” es una tabla muy universal. Es una tabla muy similar al longboard pero digamos que es una edición de bolsillo, una versión más pequeña. Un Mini Malibu anda entre los 7 pies y los 8’6 de largo. Son tablas de amplia superficie y un outline muy generoso.
-
         La tabla de surf más polivalente`,
         category: `Beach`
 

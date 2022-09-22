@@ -1,4 +1,4 @@
-//import { useState } from "react";
+import { useState } from "react"
 import "./ItemCount.css";
 
 
@@ -34,5 +34,4 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
     </div>
   )
 }
-
 export default ItemCount
