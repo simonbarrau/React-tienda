@@ -10,7 +10,7 @@ const ItemListContainer = (prop) => {
 
   useEffect(() => {
     getProducts.then((response)=>{
-      category ? setProductList(response.filter((Item)=> Item.category === category )) : setProductList(response)
+      category ? setProductList(response.find((Item)=> Item.category === category )) : setProductList(response)
     })
     .catch((error)=>{
       console.log(error);
