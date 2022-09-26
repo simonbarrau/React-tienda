@@ -45,7 +45,7 @@ const NavBar= () => {
 
               </li>
               <li class="nav-item">
-              <Link to={'/carro'} style={{textDecoration:"none"}}> 
+              <Link to={'/cart'} style={{textDecoration:"none"}}> 
               <img className='carro' height="40px" src={ima} alt="surf"></img>
              </Link>
               </li>

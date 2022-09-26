@@ -10,11 +10,15 @@ import { CartContext } from '../../Context/CartContext';
 
 const ItemDetails = ({product}) => {
   const [initialState, setInitialState] = useState(0);
-  const{addToCart, clear}=useContext(CartContext)
+  const{addToCart, removeProduct}=useContext(CartContext)
  
   
   function onAdd ( product) {
     addToCart(product, initialState)
+     }
+
+     function out(product) {
+      removeProduct(product, initialState)
      }
   
      const handleClick=() => {
@@ -47,7 +51,7 @@ const ItemDetails = ({product}) => {
  {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState} price={product.price}/>
  }
  <button onClick={() => onAdd(product)}> Agregar al carrito</button>
- <button > Eliminar</button>
+ <button onClick={out}> Eliminar</button>
  <Link to={'/'}> 
  <button > Seguir Comprando</button>
  </Link > 

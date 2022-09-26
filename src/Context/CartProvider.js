@@ -17,10 +17,18 @@ export const CartProvider= ({children}) => {
         return cart.some((item) => item.id === id)
     };
 
-    const removeProduct= (id) =>{
-            console.log(removeProduct);
-            return cart.splice((product)  => product.id === id)
-    }
+   const removeProduct=(productId) =>{
+    let newArray=[]
+        cart.forEach((product) =>{
+            if (product.id === productId){
+               console.log(product);
+            }else{
+                newArray.push(product)
+            }
+        })
+        setCart(newArray)
+       
+   }
 
     const clear = () =>{
         setCart([])
@@ -28,7 +36,7 @@ export const CartProvider= ({children}) => {
     
 
     return(
-        <CartContext.Provider value={{cart, addToCart, clear}}>
+        <CartContext.Provider value={{cart, addToCart, removeProduct, clear}}>
             {children}
     </CartContext.Provider >
 

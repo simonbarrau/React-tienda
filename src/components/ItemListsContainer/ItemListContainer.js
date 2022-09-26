@@ -2,8 +2,8 @@ import data from "../../Components/mockData";
 import { useEffect, useState } from "react";
 import ItemList from "../../Components/ItemList/ItemList";
 import { useParams } from "react-router-dom";
-import Item from "../Item/Item";
 import { getFirestore, getDocs } from "firebase/firestore";
+import { Link } from "react-router-dom";
 
 const ItemListContainer = (prop) => {
   
@@ -28,8 +28,10 @@ const ItemListContainer = (prop) => {
     })
   
   return (
+    <div>
+      <Link to="/cart"> Carrito </Link>
     <ItemList lista={productList}/>
-      
+    </div>
   )
 };
 
