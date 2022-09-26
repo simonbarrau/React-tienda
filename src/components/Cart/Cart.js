@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext"
+import { Link } from "react-router-dom"
 
 const Cart = () => {
     const {cart, addToCart, removeProduct} = useContext(CartContext)
@@ -7,8 +8,10 @@ const Cart = () => {
 
 
   return (
-    <div>
+    <div className='card'>
         <h1>  Cart  </h1>
+        {cart.length === 0 ? ( <>
+        <h2>  No hay productos en tu carrito </h2> <Link to="/"> Volver</Link> </> ) : ""}
             {cart.map((item) => (
                     <div key={item.id}> 
                             <h2>  {item.tittle}  </h2>
