@@ -7,17 +7,19 @@ import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import { CartContext } from './Context/CartContext';
 import {CartProvider} from './Context/CartProvider';
 import Loader from './Components/Loader/Loader';
+import CartWidget from './Components/CartWidget/CartWidget';
 import Cart from './Components/Cart/Cart';
 
 function App() {
   return (
     <CartProvider>
+    
 
     <BrowserRouter>
     <Loader />
 
     <div className="App">
-    <NavBar />
+    <NavBar  />
     {/* <ItemCount stock={stock}/> */}
     </div>
     <Routes>

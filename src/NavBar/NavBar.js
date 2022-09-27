@@ -2,6 +2,7 @@ import img from '../img/pic.jpg';
 import ima from '../img/car1.png';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import CartWidget from '../Components/CartWidget/CartWidget';
 
 const NavBar= () => {
     return(
@@ -44,17 +45,13 @@ const NavBar= () => {
               <div class="nav-link active">LEGENDS</div>                </Link>
 
               </li>
-              <li class="nav-item">
-              <Link to={'/cart'} style={{textDecoration:"none"}}> 
-              <img className='carro' height="40px" src={ima} alt="surf"></img>
-             </Link>
-              </li>
+             
              
             
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <CartWidget/>
+
             </form>
           </div>
         </div>

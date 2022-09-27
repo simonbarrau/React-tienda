@@ -15,18 +15,10 @@ const resta= () => { initialState >= 1 ? setInitialState(initialState -1) : aler
 
   return (
     <div >
-      
-        <hr/>
-    
-        <div className="stock"> 
-        <button onClick={resta}> - </button>
-        <button onClick={suma}> + </button>
-
-        
+        <div > 
+        <button className="stock" onClick={resta}> - </button>
+        <button className="stock" onClick={suma}> + </button>
         </div>
-
-
-
     </div>
   )
 }

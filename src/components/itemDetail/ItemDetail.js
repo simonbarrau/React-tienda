@@ -17,10 +17,7 @@ const ItemDetails = ({product}) => {
     addToCart(product, initialState)
      }
 
-     function out(product) {
-      removeProduct(product, initialState)
-     }
-  
+     
      const handleClick=() => {
     console.log(initialState);
   }
@@ -51,7 +48,9 @@ const ItemDetails = ({product}) => {
  {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState} price={product.price}/>
  }
  <button onClick={() => onAdd(product)}> Agregar al carrito</button>
- <button onClick={out}> Eliminar</button>
+ <br/> 
+
+
  <Link to={'/'}> 
  <button > Seguir Comprando</button>
  </Link > 
