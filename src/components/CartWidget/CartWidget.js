@@ -13,9 +13,11 @@ const CartWidget = (item) => {
     <Link to={'/cart'} style={{textDecoration:"none"}}> 
        <div>
         {
-          <span className="total-item">
+          <span >
         <img className='carro' height="40px" src={ima} alt="surf" ></img>
-            {totalItems() > 0 ? totalItems() : "0"}
+        <div className="total-item">
+            {totalItems() > 0 ? totalItems() : ""}
+            </div>
           </span>
         }
       </div>
