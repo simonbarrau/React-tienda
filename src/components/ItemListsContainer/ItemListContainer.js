@@ -4,6 +4,7 @@ import ItemList from "../../Components/ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { getFirestore, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
+import "./ItemListContainer.css"
 
 const ItemListContainer = (prop) => {
   
@@ -28,10 +29,10 @@ const ItemListContainer = (prop) => {
     })
   
   return (
-    <div>
-      <Link to="/cart"> Carrito </Link>
+    <>
+      <Link to="/cart" > <button type="button" className="carrt"> Carrito</button> </Link>
     <ItemList lista={productList}/>
-    </div>
+    </>
   )
 };
 

@@ -1,5 +1,4 @@
-import img from '../img/pic.jpg';
-import ima from '../img/car1.png';
+import img from '../img/california.jpg';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import CartWidget from '../Components/CartWidget/CartWidget';
@@ -21,15 +20,16 @@ const NavBar= () => {
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
               <div class="dropdown">
-  <button  class="btn btn-secondary dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+  <button class="nav-link active"  data-bs-toggle="dropdown" aria-expanded="false">
   CATEGORIES
   </button>
   <ul class="dropdown-menu">
-  <Link to={'/category/:categoryId'} style={{textDecoration:"none"}}> 
-                <div class="dropdown-item">Surf</div>
-                </Link>
                 <Link to={'/category/:categoryId'} style={{textDecoration:"none"}}> 
-                <div class="dropdown-item">Skate</div>
+                <div class="nav-link active">Surf</div>
+                </Link>
+
+                <Link to={'/category/:categoryId'} style={{textDecoration:"none"}}> 
+                <div class="nav-link active">Skate</div>
                 </Link>
  
   </ul>
@@ -37,12 +37,11 @@ const NavBar= () => {
             
               </li>
               <li class="nav-item">
-              <Link to={'/about-us'} style={{textDecoration:"none"}}> 
-              <div class="nav-link active">ABOUT US</div>                </Link>
+              <Link to={'/about-us'} style={{textDecoration:"none"}}> <div class="nav-link active">ABOUT US</div> </Link>
               </li>
               <li class="nav-item">
-              <Link to={'/legends'} style={{textDecoration:"none"}}> 
-              <div class="nav-link active">LEGENDS</div>                </Link>
+              <Link to={'/legends'} style={{textDecoration:"none"}}> <div class="nav-link active">LEGENDS</div>  </Link>
+              
 
               </li>
              

@@ -1,12 +1,12 @@
 import { CartContext } from "../../Context/CartContext";
 import { useContext } from "react";
-import ima from '../../img/car1.png';
+import ima from '../../img/carrito.png';
 import { Link } from "react-router-dom";
 import './CartWidget.css';
 
 
 
-const CartWidget = (item) => {
+const CartWidget = (condition) => {
   const {totalItems} = useContext(CartContext)
 
   return (
@@ -16,7 +16,8 @@ const CartWidget = (item) => {
           <span >
         <img className='carro' height="40px" src={ima} alt="surf" ></img>
         <div className="total-item">
-            {totalItems() > 0 ? totalItems() : ""}
+          
+            {totalItems() > 0 ? totalItems() : "" }
             </div>
           </span>
         }

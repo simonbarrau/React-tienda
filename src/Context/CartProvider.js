@@ -35,7 +35,7 @@ export const CartProvider= ({children}) => {
     }
     
     const totalItems = () => {
-        return cart.reduce((ac, cartItem) => ac + cartItem.cantidad, 0);
+        return (cart.reduce((ac, cartItem) => ac + cartItem.cantidad, 0))
       };
 
     return(
