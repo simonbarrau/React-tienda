@@ -18,26 +18,15 @@ const NavBar= () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-              <div class="dropdown">
-  <button class="nav-link active"  data-bs-toggle="dropdown" aria-expanded="false">
-  CATEGORIES
-  </button>
-  <ul class="dropdown-menu">
-                <Link to={'/category/surf'} style={{textDecoration:"none"}}> 
-                <div class="nav-link active">Surf</div>
+            <li class="nav-item">
+              <Link to={'/category/surf'} style={{textDecoration:"none"}}> 
+                <div class="nav-link active">SURF</div>
                 </Link>
-
-                <Link to={'/category/beach'} style={{textDecoration:"none"}}> 
-                <div class="nav-link active">Beach</div>
-                </Link>
- 
-  </ul>
-</div>
-            
               </li>
               <li class="nav-item">
-              <Link to={'/about-us'} style={{textDecoration:"none"}}> <div class="nav-link active">ABOUT US</div> </Link>
+              <Link to={'/category/longboards'} style={{textDecoration:"none"}}> 
+                <div class="nav-link active">LONGBOARDS</div>
+                </Link>
               </li>
               <li class="nav-item">
               <Link to={'/legends'} style={{textDecoration:"none"}}> <div class="nav-link active">LEGENDS</div>  </Link>
