@@ -1,16 +1,18 @@
 .descripciones{
     background-color: black;
-    color: wheat;
+    color: var(--clr-neon);
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 0.1825em var(--clr-neon), 0 0 0.1728em wheat;
+
 }
 
 .card{
-	width: 90%;
+	
 	margin: 70px;
 	border-radius: 6px;
 	overflow: visible;
-	background: wheat;
+	background: black;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: cell;

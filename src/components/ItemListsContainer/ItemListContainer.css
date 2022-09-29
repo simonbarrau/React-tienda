@@ -3,7 +3,6 @@
 }
 
 .carrt{
-    position: relative;
    top: 10px;
    font-weight: bold;
    font-size: 1.2rem;
@@ -17,6 +16,7 @@
    box-shadow:inset 0 0 .5em 0 var(--clr-neon) ,0 0 .5em 0 var(--clr-neon) ;
    background-color: black;
    position: relative;
+   left: 620px;
 }
 
 .carrt::before{

@@ -1,4 +1,4 @@
-import img from '../img/california.jpg';
+import img from '../img/tables.jpg';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import CartWidget from '../Components/CartWidget/CartWidget';
@@ -7,7 +7,7 @@ const NavBar= () => {
     return(
         <>
         
-        <nav class="navbar navbar-expand-lg navbar-white">
+        <nav class="navbar navbar-expand-lg navbar-white bg-black">
         <div class="container-fluid"> 
         <Link to={'/'} > 
         <img className='surf' src={img} alt="surf"></img>
@@ -24,12 +24,12 @@ const NavBar= () => {
   CATEGORIES
   </button>
   <ul class="dropdown-menu">
-                <Link to={'/category/:categoryId'} style={{textDecoration:"none"}}> 
+                <Link to={'/category/surf'} style={{textDecoration:"none"}}> 
                 <div class="nav-link active">Surf</div>
                 </Link>
 
-                <Link to={'/category/:categoryId'} style={{textDecoration:"none"}}> 
-                <div class="nav-link active">Skate</div>
+                <Link to={'/category/beach'} style={{textDecoration:"none"}}> 
+                <div class="nav-link active">Beach</div>
                 </Link>
  
   </ul>

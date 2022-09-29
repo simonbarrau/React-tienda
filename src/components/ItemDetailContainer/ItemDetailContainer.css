@@ -1,3 +1,10 @@
+
 .descrip{
     height: 100px;
+}
+
+.obD{
+    color: var(--clr-neon);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.128em black;
 }

@@ -7,8 +7,6 @@
    
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    color: var(--clr-neon);
-   
     padding: 0.25em 1em;
     border-radius: 0.25em;
     text-shadow: 0 0 0.325em var(--clr-neon);

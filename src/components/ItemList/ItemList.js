@@ -8,7 +8,7 @@ const ItemList = ({lista}) => {
               <Link  key={product.id} to={"/detail/"+ product.id} style={{textDecoration:"none"}}
               >
 
-                <div>
+                <div >
                 <Item  
                     key={product.id}
                     tittle={product.tittle}

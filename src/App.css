@@ -40,16 +40,10 @@
 
 
 
-.btn btn-secondary dropdown-toggle{
-  color: wheat;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
-}
 
 .surf{
-  height: 200px;
-  width: 200px;
-  background-color: black;
+  height: 150px;
+  width: 150px;
   display: flex;
   border-radius: 100%;
 }
@@ -57,7 +51,7 @@
 
 
 .title{
-  color: black;
+  color: var(--clr-neon);
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 35px;
 }

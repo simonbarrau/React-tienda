@@ -14,7 +14,7 @@ function App() {
   return (
     <CartProvider>
     
-
+   
     <BrowserRouter>
     <Loader />
 
@@ -36,6 +36,7 @@ function App() {
 
     </Routes>
     </BrowserRouter>
+    
     </CartProvider >
 
   );
