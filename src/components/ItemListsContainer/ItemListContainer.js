@@ -13,29 +13,20 @@ const ItemListContainer = (prop) => {
 
   useEffect(() => {
     getProducts()}, [category])
-
-  const getProducts= () => {
-    const db=getFirestore();
-    const querySnapshot= collection(db, 'items');
-    if(category){
-      const queryFilter = query(querySnapshot, where('category', '==', category));
-    getDocs(queryFilter).then((response) =>{
-      const data= response.docs.map((product) => {
-          return{ id: product.id, ...product.data()}
+    const getProducts= () => {
+      const db=getFirestore();
+      const queryBase= collection(db, 'items');
+      const querySnapshot = category ? query(queryBase, where('category', '==', category)) : queryBase;
+     
+      
+      getDocs(querySnapshot).then((response) =>{
+        const data= response.docs.map((product) => {
+            return{ id: product.id, ...product.data()}
+        })
+        setProductList(data)
       })
-      setProductList(data)
-    })
-  }
-  else{
     
-    getDocs(querySnapshot).then((response) =>{
-      const data= response.docs.map((product) => {
-          return{ id: product.id, ...product.data()}
-      })
-      setProductList(data)
-    })
-  }
-  }
+    }
     
   
   return (
