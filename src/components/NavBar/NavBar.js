@@ -1,4 +1,4 @@
-import img from '../img/tables.jpg';
+import img from '../../img/tables.jpg';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
 import CartWidget from '../CartWidget/CartWidget';
@@ -25,7 +25,7 @@ const NavBar= () => {
               </li>
               <li class="nav-item">
               <Link to={'/category/longboards'} style={{textDecoration:"none"}}> 
-                <div class="nav-link active">LONGBOARDSss</div>
+                <div class="nav-link active">LONGBOARDS</div>
                 </Link>
               </li>
               <li class="nav-item">
