@@ -4,6 +4,10 @@ import { CartContext } from "./CartContext";
 export const CartProvider= ({children}) => {
     const [cart, setCart] = useState([])
 
+    const isInCart= (id) => {
+        return cart.some((item) => item.id === id)
+    };
+    
     const addToCart= (item, cantidad) => {
         if(isInCart (item.id, cantidad)){
             alert("ya esta en el carrito")
@@ -13,9 +17,6 @@ export const CartProvider= ({children}) => {
         console.log('cart',[...cart, {...item, cantidad}]);
     };
 
-    const isInCart= (id) => {
-        return cart.some((item) => item.id === id)
-    };
 
    const removeProduct=(productId) =>{
     let newArray=[]
