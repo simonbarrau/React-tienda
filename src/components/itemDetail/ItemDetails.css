@@ -22,7 +22,7 @@ text-align: center;}
 	transform: translateY(-3%);
 }
 .card-img-topp{
-    
+    position: relative;
 	width: 250px;
 	height: 400px;
     border-radius: 5%;

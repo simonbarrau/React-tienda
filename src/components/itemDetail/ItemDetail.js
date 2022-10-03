@@ -10,7 +10,7 @@ import { CartContext } from '../../Context/CartContext';
 
 const ItemDetails = ({product}) => {
   const [initialState, setInitialState] = useState(0);
-  const{addToCart, removeProduct}=useContext(CartContext)
+  const{addToCart}=useContext(CartContext)
  
   
   function onAdd ( product) {
