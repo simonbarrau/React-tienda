@@ -9,10 +9,10 @@ export const CartProvider= ({children}) => {
     };
     
     const addToCart= (item, cantidad) => {
-        if(isInCart (item.id, cantidad)){
+        if(isInCart (item.id  , cantidad )){
             alert("ya esta en el carrito")
         }else{
-            setCart([...cart,{...item, cantidad}])
+            setCart([...cart,{...item, cantidad }])
         }
         console.log('cart',[...cart, {...item, cantidad}]);
     };

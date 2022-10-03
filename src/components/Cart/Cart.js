@@ -11,9 +11,7 @@ const Cart = () => {
     <div className='card'>
         <h1>  Cart  </h1>
         {cart.length === 0 ? ( <>
-        <h2>  No hay productos en tu carrito </h2> <Link to="/"> Volver</Link> </> ) : ""}
-      
-                {cart.length > 0 ?   cart.map((item) => (
+        <h2>  No hay productos en tu carrito </h2> <Link to="/"> Volver</Link> </> ) : cart.map((item) => (
                     <div key={item.id}> 
                             <h2>  {item.tittle}  </h2>
                             <h2> Cantidad: {item.cantidad}  </h2>
@@ -23,7 +21,9 @@ const Cart = () => {
                             <h2> Precio Total:${item.price * item.cantidad} </h2>
                             <button onClick={() => removeProduct(item.id)}> Remove Item</button>
                             <br/>          
-                 </div>)): ""}
+                 </div>))}
+      
+                 
                             
     </div>
   )
