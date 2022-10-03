@@ -28,7 +28,7 @@ const ItemDetailContainer = () => {
     const getDetail= () => {
       const queryDoc= doc(db,'items',id)
     getDoc(queryDoc).then(res => {
-        setProductDetail(res.data())
+        setProductDetail({id: res.id, ...res.data()})
     }).catch(error => {
       console.log(error);
     })
