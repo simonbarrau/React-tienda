@@ -42,7 +42,11 @@ const ItemDetailContainer = () => {
 
     {productDetail
     ? <ItemDetails product={productDetail}/>
-    : < h2 className="obD">Obteniendo Detalles...</h2>}
+    : <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>}
     </>
 
   )

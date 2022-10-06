@@ -1,0 +1,43 @@
+:root{
+    --clr-neon:hsl(317 100% 54%)
+}
+
+.ttitle{
+    color: var(--clr-neon) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;}
+
+.noProduct{
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 .925em var(--clr-neon);
+}
+
+.name{
+        color: antiquewhite;
+}
+
+.quantity{
+    color: antiquewhite;
+
+}
+
+.pc{
+    color: antiquewhite;
+
+}
+
+.totalPc{
+    color: antiquewhite;
+
+}
+
+.remove{
+    color: black;
+
+}
+
+.create{
+    color: black;
+
+}

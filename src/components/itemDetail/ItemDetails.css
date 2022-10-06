@@ -13,7 +13,7 @@
 	border-radius: 6px;
 	overflow: visible;
 	background: black;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	box-shadow: 11px 11px 11px  blue;
 	transition: all 400ms ease-out;
 	cursor: cell;
 text-align: center;}
@@ -46,15 +46,45 @@ text-align: center;}
 }
 
 
-.leter:hover{
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
-    background: linear-gradient(to right, wheat, yellow);
-}
+
 
 .counter{
+    color: yellow;
     cursor: pointer;
+    text-shadow: 0 0 0.125 yellow;
 }
+
+:root{
+    --clr-neon:hsl(317 100% 54%)
+}
+
+.leter:hover{
+
+    color: lightblue;
+    width: 200px;
+}
+.leter{
+    top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+    text-decoration: none;
+    color: blue;
+    border: blue 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em wheat, 0 0 0.128em black;
+    box-shadow:inset 0 0 .5em 0 rgba(0, 0, 255, 0.411) ,0 0 .5em 0 rgba(68, 0, 255, 0.692) ;
+    background-color: black;
+ 
+ }
+ 
+
+
+ 
+
+ 
+
 
 
 
