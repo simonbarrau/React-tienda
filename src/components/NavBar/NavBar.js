@@ -29,7 +29,7 @@ const NavBar= () => {
                 </Link>
               </li>
               <li class="nav-item">
-              <Link to={'/legends'} style={{textDecoration:"none"}}> <div class="nav-link active">LEGENDS</div>  </Link>
+              <Link to={'/destinations'} style={{textDecoration:"none"}}> <div class="nav-link active">DESTINATIONS</div>  </Link>
               
 
               </li>

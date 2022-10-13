@@ -1,11 +1,13 @@
 import './App.css';
-import NavBar from './Components/NavBar/NavBar';
-import ItemListContainer from './Components/ItemListsContainer/ItemListContainer';
-import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
+import NavBar from './components/NavBar/NavBar';
+//import NavBar from './Components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListsContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter,Routes, Route} from 'react-router-dom';
 import {CartProvider} from './Context/CartProvider';
-import Loader from './Components/Loader/Loader';
-import Cart from './Components/Cart/Cart';
+//import Loader from './Components/Loader/Loader';
+import Cart from './components/Cart/Cart';
+import Destinations from './components/Destinations/Destinations';
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
     
    
     <BrowserRouter>
-    <Loader />
+    {/* <Loader /> */}
 
     <div className="App">
     <NavBar  />
@@ -25,8 +27,7 @@ function App() {
     <Route path='category/:category' element={<ItemListContainer />}/>
 
     <Route path='detail/:id' element={<ItemDetailContainer />}/>
-    <Route path='legends' element={<div>SURF LEGENDS</div>}/>
-    <Route path='about-us' element={<div>Estoy en About</div>}/>
+    <Route path='destinations' element={<Destinations/>}/>
     <Route path='cart' element={<Cart />}/>
 
 

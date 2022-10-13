@@ -1,6 +1,5 @@
-import data from "../../Components/mockData";
 import { useEffect, useState } from "react";
-import ItemList from "../../Components/ItemList/ItemList";
+import ItemList from "../../components/ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import { getFirestore, getDocs, collection, query, where } from "firebase/firestore";
 import { Link } from "react-router-dom";
