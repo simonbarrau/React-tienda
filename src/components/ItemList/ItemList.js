@@ -3,10 +3,12 @@ import { Link } from "react-router-dom"
 const ItemList = ({lista}) => {
   return (
     <>
+    <div className="destination"> 
+ 
         {
-            lista.map((product)=>(
-              <Link  key={product.id} to={"/detail/"+ product.id} style={{textDecoration:"none"}}
-              >
+          lista.map((product)=>(
+            <Link  key={product.id} to={"/detail/"+ product.id} style={{textDecoration:"none"}}
+            >
 
                 <div >
                 <Item  
@@ -19,8 +21,12 @@ const ItemList = ({lista}) => {
                 </div>
                 </Link>
 
-            ))
-        }
+))
+}
+        <footer>   App Created by       <strong>Simon Barrau </strong> 
+ 
+ </footer> 
+</div> 
     </>
   )
 }

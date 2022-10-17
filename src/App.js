@@ -19,13 +19,13 @@ function App() {
 
     <div className="App">
     <NavBar  />
+
     {/* <ItemCount stock={stock}/> */}
     </div>
     <Routes>
 
-    <Route path='/' element={<ItemListContainer />}/>
+    <Route path='/' element={<ItemListContainer /> }/>
     <Route path='category/:category' element={<ItemListContainer />}/>
-
     <Route path='detail/:id' element={<ItemDetailContainer />}/>
     <Route path='destinations' element={<Destinations/>}/>
     <Route path='cart' element={<Cart />}/>

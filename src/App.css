@@ -1,18 +1,18 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  position: relative;
-  left:  550px;
-  top: 170px;
+.surf{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  border-radius: 100%;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .surf {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -44,12 +44,6 @@
 
 
 
-.surf{
-  height: 150px;
-  width: 150px;
-  display: flex;
-  border-radius: 100%;
-}
 
 
 

@@ -38,6 +38,8 @@ const ItemDetailContainer = () => {
 
   return (
     <> 
+        <div className="destination"> 
+
           <Link to="/cart" > <button type="button" className="carrt"> Carrito</button> </Link>
 
     {productDetail
@@ -47,6 +49,8 @@ const ItemDetailContainer = () => {
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>}
+  </div> 
+
     </>
 
   )

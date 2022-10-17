@@ -1,16 +1,43 @@
+:root{
+    --clr-neon:hsl(317 100% 54%)
+}
 
 
-.card-img-top{
-    position: relative;
-    left: 500px;
-    width: 250px;
-    height: 400px;
-    border-radius: 50%;
+.image{
+    width: 550px;
+    height: 200px;
+    border-radius: 20%;
 }
 .precio{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
+
+.cad{
+    border: 3px var(--clr-neon) solid;
+    border-radius: 10px;
+    margin: 3.5%;
+    display: grid;
+}
+.carta{
+    display: flex;
+    flex-direction: column;
+}
+
+.carsh3{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+	box-shadow: 11px 11px 11px  blue;
+    transition: all 400ms ease-out;
+
+    
+}
+
+
 
 
 

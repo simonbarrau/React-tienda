@@ -1,0 +1,38 @@
+:root{
+    --clr-neon:hsl(317 100% 54%)
+
+}
+
+.destination{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+
+.topFive{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--clr-neon);
+}
+
+.order{
+    color: red;
+}
+.countries{
+    color: red;
+}
+
+.paragraph{
+    color: black;
+}
+
+footer{
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: sticky;
+}
+
+strong{
+    color: var(--clr-neon);
+}

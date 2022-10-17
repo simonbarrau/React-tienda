@@ -4,17 +4,17 @@ const Destinations = () => {
   return (
     <>
     <div className='destination'> 
-      <h1> Top 5 surfing destinations in the world</h1> 
-      <ol>
-         <li> 
-        <h3>Gold Coast, Australia</h3>   
-                <p>Australia’s 6th largest city, Queensland’s surf Mecca is known for its many right-hand point breaks, long beach breaks and a new artificial reef at Narrowneck. Dry winters, a mild subtropical climate and a massive Hinterland of forested, mountainous national parks make this city of nearly 600,000 a pleasant marriage between the attractions of Australian nature and all the perks and conveniences of a highly developed urban holiday destination. Surfing is best from January to July. Notable breaks include Straddie, Snapper (Superbank), The Spit, Main Beach, Greenmount (Coolangatta beach), Surfers Paradise, Currumbin (The Alley), Burleigh, Miami, Duranbah, Broadbeach and Mermaid Beach, Palm Beach, Tugun, Bilinga and Kirra.</p>  
+      <h1 className='topFive'> Top 5 surfing destinations in the world</h1> 
+      <ol className='order'>
+         <li className='elei'> 
+        <h3 className='countries'>Gold Coast, Australia</h3>   
+                <p className='paragraph'>Australia’s 6th largest city, Queensland’s surf Mecca is known for its many right-hand point breaks, long beach breaks and a new artificial reef at Narrowneck. Dry winters, a mild subtropical climate and a massive Hinterland of forested, mountainous national parks make this city of nearly 600,000 a pleasant marriage between the attractions of Australian nature and all the perks and conveniences of a highly developed urban holiday destination. Surfing is best from January to July. Notable breaks include Straddie, Snapper (Superbank), The Spit, Main Beach, Greenmount (Coolangatta beach), Surfers Paradise, Currumbin (The Alley), Burleigh, Miami, Duranbah, Broadbeach and Mermaid Beach, Palm Beach, Tugun, Bilinga and Kirra.</p>  
 
-                <img width="50%" height="300px" src='https://getrentacar.com/storage/uploads/dlMl0MSn0q2JrjvFeRM8L9C42waUtfyQLCX9a6rS.png' alt='Goald Coast' title=''></img>             
+                <img className='iemege' width="50%" height="300px" src='https://getrentacar.com/storage/uploads/dlMl0MSn0q2JrjvFeRM8L9C42waUtfyQLCX9a6rS.png' alt='Goald Coast' title=''></img>             
          </li>
 
           <li> 
-         <h3> Costa Rica </h3>  
+         <h3> Costa Rica </h3>   
          <p> Home to Supertubes, the longest and world’s best right-hander, according to many experts, “Ticos” provides a choice of 10 different sections and is popular with high-level surfers, intermediates and longboarders alike. Be careful of the currents, be sure to wear booties and have a strong board. Besides the pro-level Supertubes.  </p>   
             
                <img width="50%" height="300px" src='https://traveler.marriott.com/wp-content/uploads/2017/12/Costa-Rica_surfers-GettyImages-578363125.jpg' alt='Costa Rica' title=''></img>  
@@ -40,7 +40,13 @@ const Destinations = () => {
           </li> 
          
      </ol> 
+
+      <footer>   App Created by       <strong>Simon Barrau </strong> 
+ 
+    </footer> 
       </div> 
+
+
     </>
   )
 }

@@ -2,17 +2,14 @@ import "./Item.css"
 
 const Item = ({tittle, price, image}) => {
   return (
-    <>
-      <div className="card" >
+
+   <div className="carsh3" >
       <h5 className="title">{tittle}</h5>
-
-  <img src={image} className="card-img-top" alt="foto"></img>
-
-  <div className="card-body">
-    <p className="precio">Price:${price}</p>
+      <img src={image} className="image" alt="foto"></img>
+      <p className="precio">Price:${price}</p>
   </div>
-</div>
-</>
+
+
   );
 };
 

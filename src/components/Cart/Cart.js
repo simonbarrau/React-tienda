@@ -44,28 +44,35 @@ const Cart = () => {
 
 
   return (<>
+      <div className="destination"> 
+
       <h1 className="ttitle">  Carrito de compras  </h1>
-    <div className='card'>
+    <div className='carsh'>
+
         {cart.length === 0 ? ( <>
-        <h2 className="noProduct">  No hay productos en tu carrito </h2> <Link to="/"> Volver</Link> </> ) : cart.map((item ) => (
-                    <div key={item.id}> 
-                            <h2 className="name">  {item.tittle}  </h2>
-                            <h2 className="quantity"> Cantidad: {item.cantidad}  </h2>
+        <h2 className="noProduct">  No hay productos en tu carrito </h2> <Link to="/"> Volver</Link>  </> ) : cart.map((item ) => (
+                    <div key={item.id}>
+                            <h2 className="title">  {item.tittle}  </h2>
+                            <h2 className="title"> Cantidad: {item.cantidad}  </h2>
                             <br/>
-                            <img src={item.image} alt={item.tittle} class="card-img-topp"></img>
-                            <h2 className="pc"> price:${item.price} </h2>
-                            <h2 className="totalPc"> Precio Total:${item.price * item.cantidad} </h2>
-                            <button className="remove" onClick={() => removeProduct(item.id)}>Remove Item</button>
+                            <img src={item.image} alt={item.tittle} class="card"></img>
+                            <h2 className="title"> price:${item.price} </h2>
+                            <h2 className="title"> Precio Total:${item.price * item.cantidad} </h2>
+                 <div style={{margin:'20px', display:'grid', gridTemplateColumns:'333px 333px 333px'}}>
+                            <button className="title" onClick={() => removeProduct(item.id)}>Remove Item</button>
                             <br/> 
+                  <button className="title" onClick={createOrder}> Create Order</button>
+                 </div>
                  </div>))                  
       }
 
-                 <div style={{margin:'20px'}}>
-                  <button className="create" onClick={createOrder}> Create Order</button>
-                 </div>
       
                  
                             
+    </div>
+    <footer>   App Created by       <strong>Simon Barrau </strong> 
+ 
+ </footer> 
     </div>
     </>
   )

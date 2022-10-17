@@ -29,8 +29,10 @@ const ItemDetails = ({product}) => {
 
 
 
-  return (
-    <div className='card' >
+  return ( <> 
+    <div className="destination"> 
+
+    <div className='carsh' >
 
     <div class="cardd" >
       <h2 className="title">  {product.tittle}  </h2>
@@ -46,21 +48,27 @@ const ItemDetails = ({product}) => {
 <h3 onClick={resetCount} className="counter">{initialState}</h3>
  {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState} price={product.price}/>
  }
- <button onClick={() => onAdd(product)}> Agregar al carrito</button>
+ <button onClick={() => onAdd(product)}> Add to cart</button>
  <br/> 
 
 
  <Link to={'/'}> 
- <button > Seguir Comprando</button>
+ <button > Keep on Buying!</button>
  </Link > 
 
 <Link to={'/cart'}> 
-<button onClick={handleClick}> Terminar Compra</button>
+<button onClick={handleClick}> Finish Buying</button>
 </Link> 
 
 
  </div>
  </div>
+<footer>   App Created by       <strong>Simon Barrau </strong> 
+ 
+    </footer> 
+    </div> 
+
+    </> 
 
   );
 };

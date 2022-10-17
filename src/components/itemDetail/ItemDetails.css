@@ -1,3 +1,8 @@
+.destination{
+    margin: 0%;
+    padding: 0%;
+}
+
 .descripciones{
     background-color: black;
     color: var(--clr-neon);
@@ -9,14 +14,40 @@
 
 .card{
 	
-	margin: 70px;
-	border-radius: 6px;
+	margin: 50px;
+	border-radius: 6%;
+    width: 25%;
+	overflow: visible;
+	background: rgba(0, 0, 255, 0.411);
+	box-shadow: 11px 11px 11px  blue;
+	transition: all 400ms ease-out;
+	cursor: cell;
+text-align: center;
+display: block;}
+
+.carsh{
+	
+	margin: 50px;
+	border-radius: 6%;
 	overflow: visible;
 	background: black;
 	box-shadow: 11px 11px 11px  blue;
 	transition: all 400ms ease-out;
 	cursor: cell;
-text-align: center;}
+    text-align: center;
+}
+
+.carsh2{
+	
+	margin: 50px;
+	border-radius: 6%;
+	overflow: visible;
+	background: black;
+	box-shadow: 11px 11px 11px  blue;
+	transition: all 400ms ease-out;
+    text-align: center;
+    width: 200px;
+}
 .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
@@ -51,7 +82,6 @@ text-align: center;}
 .counter{
     color: yellow;
     cursor: pointer;
-    text-shadow: 0 0 0.125 yellow;
 }
 
 :root{
@@ -60,8 +90,10 @@ text-align: center;}
 
 .leter:hover{
 
-    color: lightblue;
-    width: 200px;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125 solid;
+    background-color: blue;
+    box-shadow: inset 0 0 .8em blue;
 }
 .leter{
     top: 10px;
@@ -73,7 +105,7 @@ text-align: center;}
     border: blue 0.125em solid;
     padding: 0.25em 1em;
     border-radius: 0.25em;
-    text-shadow: 0 0 0.125em wheat, 0 0 0.128em black;
+    text-shadow: 0 0 0.125em blue, 0 0 0.128em black;
     box-shadow:inset 0 0 .5em 0 rgba(0, 0, 255, 0.411) ,0 0 .5em 0 rgba(68, 0, 255, 0.692) ;
     background-color: black;
  

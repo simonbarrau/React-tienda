@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CartContext } from "./CartContext";
+import swal from "sweetalert";
 
 export const CartProvider= ({children}) => {
     const [cart, setCart] = useState([])
@@ -10,7 +11,12 @@ export const CartProvider= ({children}) => {
     
     const addToCart= (item, cantidad) => {
         if(isInCart (item.id  , cantidad )){
-            alert("ya esta en el carrito")
+             swal({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Lo sentimos, este producto ya esta en su carrito!',
+                
+              })
         }else{
             setCart([...cart,{...item, cantidad }])
         }
