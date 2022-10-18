@@ -58,7 +58,7 @@
     padding-left: 50px;
 }
 .gifs img{
-    height: 456px;
+    height: 460px;
     margin-right: 30px;
     box-shadow: var(--clr-neon) 5px 18px 15px ;
 
@@ -68,5 +68,12 @@
     background-color: black;
     border: 2px solid var(--clr-neon);
     color: white;
+}
+
+.long{
+    display: grid;
+grid-template-columns: 100%;    
+margin-left: 100px;
+margin-top: 20px;
 }
 

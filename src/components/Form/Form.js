@@ -1,6 +1,5 @@
 import './Form.css'
-import { useState } from 'react';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { CartContext } from '../../Context/CartContext';
 import { collection, addDoc, getFirestore} from "firebase/firestore";
 import moment from "moment/moment";
@@ -107,6 +106,8 @@ const Form = () => {
         <div className='gifs'>
             <img src="https://media.giphy.com/media/ckAsLajQY6HxYHYRDX/giphy-downsized-large.gif" alt="surf gif" />
             <img src="https://media.giphy.com/media/5kF1QQlD6tKobjO5lw/giphy.gif" alt=" surf gif" />
+            <img className='long' src="https://media.giphy.com/media/ThqoAxf9ebe8M/giphy-downsized-large.gif" alt="longboarding gif" />
+            
         </div>
         </div>
 
