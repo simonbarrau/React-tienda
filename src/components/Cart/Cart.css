@@ -1,6 +1,34 @@
+
 :root{
     --clr-neon:hsl(317 100% 54%)
 }
+
+.ttitle{
+    color: var(--clr-neon) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;}
+
+
+
+.boton {
+    height: 55px;
+    width: 100px;
+    border: 2px solid var(--clr-neon);
+    background-color: wheat;
+    color: black;
+    font-size: 15px;
+    border-radius: 30px;
+    font-weight: 100;
+    transition: ease-in 0.5s;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+
 
 .ttitle{
     color: var(--clr-neon) ;
@@ -24,38 +52,10 @@
 
 }
 
-.image{
-    width: 150px;
-    height: 200px;
-   border-radius: 20%;
-}
-.pc{
-    color: antiquewhite;
-    font-size: 15px;
 
-}
 
-.totalPc{
-    color: antiquewhite;
-    font-size: 15px;
 
-}
 
-.remove{
-    color: black;
 
-}
 
-.create{
-    color: black;
 
-}
-
-.carp{
-    width: 25%;
-    border: 2px  white solid;
-    border-radius: 5%;
-    height: 400px;
-    display: flex;
-    
-}

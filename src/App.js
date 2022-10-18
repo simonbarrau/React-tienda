@@ -8,6 +8,7 @@ import {CartProvider} from './Context/CartProvider';
 //import Loader from './Components/Loader/Loader';
 import Cart from './components/Cart/Cart';
 import Destinations from './components/Destinations/Destinations';
+import Form from './components/Form/Form';
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
     <Route path='detail/:id' element={<ItemDetailContainer />}/>
     <Route path='destinations' element={<Destinations/>}/>
     <Route path='cart' element={<Cart />}/>
+    <Route path='/form' element= {<Form/>}/>
+
 
 
 

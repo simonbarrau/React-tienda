@@ -27,7 +27,7 @@ display: block;}
 	border-radius: 6%;
 	overflow: visible;
 	background: black;
-	box-shadow: 11px 11px 11px  blue;
+	box-shadow: 11px 11px 11px rgba(17, 19, 158, 0.797);
 	transition: all 400ms ease-out;
 	cursor: cell;
     text-align: center;

@@ -53,11 +53,11 @@ const ItemDetails = ({product}) => {
 
 
  <Link to={'/'}> 
- <button > Keep on Buying!</button>
+ <button > Keep on Shoping!</button>
  </Link > 
 
 <Link to={'/cart'}> 
-<button onClick={handleClick}> Finish Buying</button>
+<button onClick={handleClick}> Go To Buy</button>
 </Link> 
 
 

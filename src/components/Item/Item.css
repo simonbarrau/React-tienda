@@ -3,10 +3,11 @@
 }
 
 
+
 .image{
-    width: 550px;
+    width: 150px;
     height: 200px;
-    border-radius: 20%;
+   border-radius: 80%;
 }
 .precio{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
