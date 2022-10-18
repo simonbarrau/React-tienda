@@ -13,29 +13,13 @@
     color: white;
 }
 
-.cad{
-    border: 3px var(--clr-neon) solid;
-    border-radius: 10px;
-    margin: 3.5%;
-    display: grid;
-}
+
 .carta{
     display: flex;
     flex-direction: column;
 }
 
-.carsh3{
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: black;
-	box-shadow: 11px 11px 11px  blue;
-    transition: all 400ms ease-out;
 
-    
-}
 
 
 

@@ -44,7 +44,7 @@ const Cart = () => {
 
 
   return (<>
-      <div className="destination"> 
+      <div> 
 
       <h1 className="ttitle">  Carrito de compras  </h1>
     <div className='carsh'>
@@ -55,7 +55,7 @@ const Cart = () => {
                             <h2 className="title">  {item.tittle}  </h2>
                             <h2 className="title"> Cantidad: {item.cantidad}  </h2>
                             <br/>
-                            <img src={item.image} alt={item.tittle} class="card"></img>
+                            <img src={item.image} alt={item.tittle} class="card-img-topp"></img>
                             <h2 className="title"> price:${item.price} </h2>
                             <h2 className="title"> Precio Total:${item.price * item.cantidad} </h2>
                  <div style={{margin:'20px', display:'grid', gridTemplateColumns:'333px 333px 333px'}}>
@@ -70,10 +70,8 @@ const Cart = () => {
                  
                             
     </div>
-    <footer>   App Created by       <strong>Simon Barrau </strong> 
- 
- </footer> 
     </div>
+   
     </>
   )
 }

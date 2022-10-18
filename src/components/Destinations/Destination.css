@@ -4,9 +4,13 @@
 }
 
 .destination{
+    align-items: center;
     margin: 0%;
     padding: 0%;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .topFive{
