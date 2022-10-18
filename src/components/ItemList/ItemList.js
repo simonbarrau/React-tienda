@@ -23,7 +23,7 @@ const ItemList = ({lista}) => {
 
 ))
 }
-        <footer>   App Created by       <strong>Simon Barrau </strong> 
+        <footer>  This Application Was Created by       <strong>Simon Barrau </strong> 
  
  </footer> 
 </div> 

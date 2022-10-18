@@ -7,7 +7,7 @@ const NavBar= () => {
     return(
         <>
         
-        <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <nav class="navbar navbar-expand-lg navbar-white bg-black">
         <div class="container-fluid"> 
         <Link to={'/'} > 
         <img className='surf' src={img} alt="surf"></img>
