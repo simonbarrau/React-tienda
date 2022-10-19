@@ -4,3 +4,7 @@ SURF ZONE
 Este proyecto fue realizado con React Js. Es un e-commerce en el cual se venden tablas de Surf y de Longboards, gracias al curso de Coder House logre desarrollar este sitio a lo largo de 14 clases.
 
 # navegacion.gif
+
+
+https://user-images.githubusercontent.com/105886081/196592287-b9706ce3-80c7-4d00-892e-1b9650ed55d7.mp4
+
