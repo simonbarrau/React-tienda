@@ -14,7 +14,7 @@ export const CartProvider= ({children}) => {
              swal({
                 icon: 'error',
                 title: 'Oops...',
-                text: 'Lo sentimos, este producto ya esta en su carrito!',
+                text: 'We are sorry, this product is already in your cart!',
                 
               })
         }else{

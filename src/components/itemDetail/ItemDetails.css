@@ -34,6 +34,8 @@ display: block;}
 }
 
 
+
+
 .card:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
@@ -67,6 +69,7 @@ display: block;}
 
 .counter{
     color: yellow;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -96,6 +99,20 @@ display: block;}
     background-color: black;
  
  }
+
+ .keepOn{
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.keepOn:hover{
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+    font-weight: 800;
+}
  
 
 

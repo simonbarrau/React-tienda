@@ -48,16 +48,16 @@ const ItemDetails = ({product}) => {
 <h3 onClick={resetCount} className="counter">{initialState}</h3>
  {initialState < 8 &&  <ItemCount initialState={initialState}   setInitialState={setInitialState} price={product.price}/>
  }
- <button onClick={() => onAdd(product)}> Add to cart</button>
+ <button className='keepOn' onClick={() => onAdd(product)}> Add to cart</button>
  <br/> 
 
 
  <Link to={'/'}> 
- <button > Keep on Shoping!</button>
+ <button className='keepOn'> Keep on Shoping!</button>
  </Link > 
 
 <Link to={'/cart'}> 
-<button onClick={handleClick}> Go To Buy</button>
+<button className='keepOn' onClick={handleClick}> Go To Buy</button>
 </Link> 
 
 

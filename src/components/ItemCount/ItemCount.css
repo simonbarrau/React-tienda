@@ -1,7 +1,14 @@
+.stock{
+        border-radius: 30px;
+        font-weight: 1000;
+}
+
 .stock:hover{
     
-        box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+        box-shadow: 5px 5px 20px white;
         transform: translateY(-3%);
-        background: linear-gradient(to right, lightblue, blue);
+        background: black;
+        border: 1px white solid;
+        color: white;
         width: 30px;
 }

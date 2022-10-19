@@ -72,7 +72,7 @@ const Form = () => {
     <>
     
     <div className='bodyForm'>
-    <h3 className='keepOn'>
+    <h3 className='text'>
         Keep on! You are one step closer to buy it and start a fresh new life! Go for it!
     </h3>
 
